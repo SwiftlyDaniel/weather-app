@@ -44,20 +44,21 @@ The following must be taken into consideration because of the time constrains:
 
 Must have Flutter installed, see [Install | Flutter](https://docs.flutter.dev/get-started/install)
 
-1) First, clone the repository or download the source code
-2) Get into the directory
+- First, clone the repository or download the source code
+`git clone git@github.com:SwiftlyDaniel/weather-app.git`
+- Get into the directory:
 `cd weather_app`
-3) Put your OpenWeather API key in the `.env`. See `default.env` for a reference
+- Put your OpenWeather API key in the `.env`. See `default.env` for a reference
 `echo "OPEN_WEATHER_MAP_API_KEY=your_api_key_here" > .env`
-4) Install dependencies
+- Install dependencies
 `flutter pub get`
-5) Run tests
+- Run tests
 `flutter test`
-6) Run integration test
+- Run integration test
 `flutter test integration_test/weather_app_test.dart`
-7) Run golden tests to update screenshots (located in `integration_test/test_goldens`)
+- Run golden tests to update screenshots (located in `integration_test/test_goldens`)
 `flutter test integration_test/weather_app_golden_test.dart --update-goldens`
-8) Run the app in debug mode
+- Run the app in debug mode
 `flutter run`
 
 ### Flutter Doctor output
